@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import PropTypes from "prop-types";
+// import React, { Fragment } from "react";
+// imr import react
+function App({ salud, subtitle }) {
+  const obj = {
+    name: "Enmnauel",
+    age: 26,
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Hello World, {salud}</h1>
+      <p>{subtitle}</p>
+    </>
   );
 }
 
+// This Allow me to expecify the data tyep of my object
+App.propTypes = {
+  salud: PropTypes.string.isRequired,
+};
+
+App.defaultProps = {
+  subtitle: "Soy un subtitulo",
+};
+
 export default App;
+
+{
+  /* Comments React way */
+}
+{
+  /* <p>{JSON.stringify(obj, null, 3)}</p> */
+}
