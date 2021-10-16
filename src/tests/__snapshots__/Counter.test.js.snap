@@ -5,7 +5,9 @@ exports[`Pruebas en Counter Component It should show counter componet matching w
   <h1>
     Counter App
   </h1>
-  <h2 />
+  <h2>
+    10
+  </h2>
   <button
     onClick={[Function]}
   >
