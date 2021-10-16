@@ -21,4 +21,15 @@ describe("Pruebas App", () => {
     const wrapper = shallow(<App salud={salud} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  test("Debe mostrar subtitle sent by props", () => {
+    const salud = "Hola soy Yeison !!";
+    const soySubtitle = "Soy un subtitulo";
+    const wrapper = shallow(<App salud={salud} subtitle={soySubtitle} />);
+
+    //----------------------
+    const texttoParrafo = wrapper.find("p").text();
+    console.log(texttoParrafo);
+    expect(texttoParrafo).toBe(soySubtitle);
+  });
 });

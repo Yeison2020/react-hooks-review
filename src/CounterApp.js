@@ -24,6 +24,7 @@ function CounterApp({ value }) {
     <div>
       <h1>Counter App</h1>
       <h2>{counter}</h2>
+
       <button onClick={handleAdd}>+1</button>
       <button onClick={handleReset}>Reset</button>
       <button onClick={handleReduce}>-1</button>
