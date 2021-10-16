@@ -9,7 +9,7 @@ function App({ salud, subtitle }) {
   };
   return (
     <>
-      <h1>Hello World, {salud}</h1>
+      <h1>{salud}</h1>
       <p>{subtitle}</p>
     </>
   );
